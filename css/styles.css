@@ -1,0 +1,91 @@
+:root {
+    /* background color site */
+    --background-color: linear-gradient(180deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34%, rgba(187, 186, 192, 0.26) 63%);
+    --background-color-hover: linear-gradient(180deg, #241F24 1%, rgba(91, 91, 91, 0.26) 7%, rgba(187, 186, 192, 0) 12%);
+    --light-background-color: #ffffff;
+    --medium-background-color: #E0E0E0;
+    --medium-background-color-50: rgba(224, 224, 224, 0.5);
+
+    /* text color site */
+    --light-text-color: #ffffff;
+    --dark-text-color: #000000;
+    --gray-text-color: #E0E0E0;
+
+    /* star color site */
+    --icon-color: #4F4F4F;
+}
+
+/* font family */
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.delius-unicase-regular {
+    font-family: "Delius Unicase", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* base styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    color: var(--dark-text-color);
+    background: var(--light-background-color);
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
