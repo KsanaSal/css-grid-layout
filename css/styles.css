@@ -101,8 +101,106 @@ ul {
     padding: 0 135px;
 }
 
+.title{
+    font-size: 36px;
+}
+
+.list-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--light-text-color);
+}
+
+.list-date{
+    font-size: 20px;
+    color: var(--gray-text-color);
+}
+
 /* header styles */
 .header {
     font-size: 40px;
     padding-top: 15px;
+}
+
+/* architectural styles */
+.architectural{
+    padding-top: 60px;
+}
+.architectural-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+.architectural-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 370px;
+    gap: 30px;
+}
+.architectural-item:nth-child(2){
+    grid-column: span 2;
+}
+.architectural-item:nth-child(3){
+    grid-column: span 2;
+}
+.architectural-item:nth-child(6){
+    grid-column: span 2;
+}
+/* Tablet */
+/* @media (max-width: 900px) {
+    .architectural-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .architectural-item:nth-child(2),
+    .architectural-item:nth-child(3),
+    .architectural-item:nth-child(6) {
+        grid-column: span 2;
+    }
+} */
+/* Mobile */
+/* @media (max-width: 600px) {
+    .architectural-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .architectural-item:nth-child(2),
+    .architectural-item:nth-child(3),
+    .architectural-item:nth-child(6) {
+        grid-column: span 1; 
+    }
+} */
+.architectural-item{
+    position: relative;
+    height: 370px;
+    border-radius: 20px;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+.architectural-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.architectural-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+.architectural-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: var(--background-color);
 }
