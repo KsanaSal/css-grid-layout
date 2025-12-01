@@ -1,7 +1,7 @@
 :root {
     /* background color site */
-    --background-color: linear-gradient(180deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34%, rgba(187, 186, 192, 0.26) 63%);
-    --background-color-hover: linear-gradient(180deg, #241F24 1%, rgba(91, 91, 91, 0.26) 7%, rgba(187, 186, 192, 0) 12%);
+    --background-color: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34%, rgba(187, 186, 192, 0.26) 63%);
+    --background-color-hover: linear-gradient(0deg, #241F24 1%, rgba(91, 91, 91, 0.26) 7%, rgba(187, 186, 192, 0) 12%);
     --light-background-color: #ffffff;
     --medium-background-color: #E0E0E0;
     --medium-background-color-50: rgba(224, 224, 224, 0.5);
@@ -88,4 +88,21 @@ ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.section{
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 135px;
+}
+
+/* header styles */
+.header {
+    font-size: 40px;
+    padding-top: 15px;
 }
